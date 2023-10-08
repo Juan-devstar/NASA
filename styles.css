@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Oswald:wght@600&family=Pixelify+Sans:wght@600&display=swap');
+
+*{
+    transition: all 0.5s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.color{
+    color: white;
+}
+
+:root {
+    --bdr1: #000 solid 1px;
+    --bdr2: #000 solid 2px;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
+  }
+  
+  body {
+    height: auto;
+    width: auto;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 1rem;
+    background: #ffffed;
+  }
+  
+  .sb {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #e0ffff;
+    border: var(--bdr2);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sb a {
+    display: block;
+    color: #000;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* .sb a.sb-active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f0fff0;
+  } */
+  
+  .sb a:hover:not(.sb-active) {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #f0fff0;
+  }
+
+  .sb-active:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f0fff0;
+  }
+  
+  div.sb-container {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sb {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sb a {
+      float: left;
+    }
+    div.sb-container {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sb a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  /* blog-header/Blog Title */
+  .blog-header {
+    margin-top: 1rem;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    border: var(--bdr2);
+    background: #3f326e;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .blog-left {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .blog-right {
+    float: left;
+    width: 25%;
+    padding-left: 1rem;
+  }
+  
+  /* Fake image */
+  .blog-fake-img {
+    border: var(--bdr1);
+    background-color: #160165;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* Add a card effect for articles */
+  .blog-card {
+    border: var(--bdr2);
+    background-color: #daff35;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .blog-card1 {
+    border: var(--bdr2);
+    background-color: #160165;
+    padding: 1rem;
+    width: 400px;
+    margin-top: 1rem;
+  }
+
+  .blog-fake-img1 {
+    border: var(--bdr1);
+    background-color: #daff35;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .imagenes{
+    width: 300px;
+  }
+
+  /* Clear floats after the columns */
+  .blog-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 1rem;
+    text-align: center;
+    border: var(--bdr2);
+    background: #160165;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .blog-left,
+    .blog-right {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  .fa {
+    padding: 1rem;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: #ffffed;
+  }
+  
+  .fa:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  
