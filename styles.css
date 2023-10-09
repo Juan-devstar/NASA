@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Oswald:wght@600&family=Pixelify+Sans:wght@600&display=swap');
-
-*{
-    transition: all 0.5s;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -18,9 +15,8 @@ html{
   }
   * {
     box-sizing: border-box;
-    font-family: 'Caprasimo', cursive;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s;
   }
   
   body {
@@ -142,6 +138,43 @@ html{
     padding: 1rem;
     width: 400px;
     margin-top: 1rem;
+  }
+
+  .blog-card2 {
+    border: var(--bdr2);
+    background-color: #daff35;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pad{
+    padding: 10px;
+  }
+
+  .stl{
+    text-decoration: none;
+    color: #160165;
+    cursor: pointer;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: xx-large;
+  }
+
+  #parraf{
+    font-size: xx-large;
+  }
+
+  .img-border{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .border-rad{
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
   }
 
   .blog-fake-img1 {
